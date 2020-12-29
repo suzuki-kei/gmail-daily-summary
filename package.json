@@ -1,0 +1,11 @@
+{
+  "name": "gmail-daily-summary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.gs",
+  "scripts": {
+    "test": "echo OK"
+  },
+  "author": "SUZUKI Kei",
+  "license": "MIT"
+}
