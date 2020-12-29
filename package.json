@@ -4,8 +4,12 @@
   "description": "",
   "main": "main.gs",
   "scripts": {
-    "test": "echo OK"
+    "test": "echo OK",
+    "clasp": "$(npm bin)/clasp"
   },
   "author": "SUZUKI Kei",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google/clasp": "^2.3.0"
+  }
 }
