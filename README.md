@@ -6,7 +6,6 @@ Gmail で受信している各種通知メールの日次件数を集計しま�
 # 前提条件
 
  * npm (https://www.npmjs.com/)
- * clasp (https://github.com/google/clasp)
 
 # 使用方法
 
