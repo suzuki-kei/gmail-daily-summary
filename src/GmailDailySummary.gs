@@ -173,6 +173,10 @@ class GmailDailySummary {
         const values = this._toSummaryValuesFromMap(summaryMap)
         const range = summarySheet.getRange(2, 1, values.length, 2)
         range.setValues(values)
+        const dateCells = summarySheet.getRange(2, 1, values.length)
+        dateCells.setNumberFormat("yyyy-mm-dd")
+        const countCells = summarySheet.getRange(2, 2, values.length)
+        countCells.setNumberFormat("0")
     }
 
     /**
