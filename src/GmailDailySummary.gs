@@ -79,8 +79,17 @@ class GmailDailySummary {
         const map = new Map()
 
         for(let i = 1; i < values.length; i++) {
-            const dateString = DateUtils.toJstDateString(values[i][0])
+            const date = values[i][0]
+            if(!(date instanceof Date)) {
+                // 日付以外の値が設定されている場合は無視する.
+                continue
+            }
             const count = values[i][1]
+            if(typeof(count) !== "number") {
+                // 数値以外の値が設定されている場合は無視する.
+                continue
+            }
+            const dateString = DateUtils.toJstDateString(values[i][0])
             map.set(dateString, count)
         }
         return map
